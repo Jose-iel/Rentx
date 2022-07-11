@@ -1,7 +1,8 @@
 import React from 'react';
-import { CardDetails } from './src/screens/CardDetails';
+// import { CardDetails } from './src/screens/CardDetails';
 import { Home } from './src/screens/Home';
-import AppLoading from 'expo-app-loading';
+import { Scheduling } from './src/screens/Scheduling';
+import { SplashScreen } from './src/screens/SplashScreen';
 
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
@@ -29,12 +30,12 @@ export default function App() {
   }); 
 
   if(!fontsLoaded) {
-    return <AppLoading />
+    return <SplashScreen/>
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <CardDetails />
+      <Scheduling />
     </ThemeProvider>
   );
 }
