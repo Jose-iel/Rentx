@@ -1,7 +1,7 @@
 import React from 'react';
 // import { CardDetails } from './src/screens/CardDetails';
-import { Home } from './src/screens/Home';
-import { Scheduling } from './src/screens/Scheduling';
+// import { Home } from './src/screens/Home';
+import { SchedulingDetails } from './src/screens/SchedulingDetails';
 import { SplashScreen } from './src/screens/SplashScreen';
 
 import { ThemeProvider } from 'styled-components';
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Scheduling />
+      <SchedulingDetails />
     </ThemeProvider>
   );
 }
